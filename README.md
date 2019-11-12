@@ -1,1 +1,1 @@
-# bio294
+# Course material for bio294
