@@ -16,7 +16,7 @@ from Bio.Blast import NCBIXML
 
 def trim_alignment(aln, max_prop_missing = 0):
 
-    """ Given a multisequence alignment, remove all positionswith
+    """ Given a multisequence alignment, remove all positions with
     a proportion of missing bases larger than max_prop_missing. 
     """
     

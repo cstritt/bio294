@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-
-""" create fast & dirty gene tree
+""" Create fast & dirty gene tree
 
 Created on Fri Nov  8 10:17:51 2019
 @author: cristobal
@@ -115,7 +114,7 @@ def main():
     # Blast and filter results
     blast_res = local_blast(gene + ".fasta", gene_space)
 
-    homologs = filter_blast_results(gene + ".blastout")
+    homologs = filter_blast_results(gene + ".fasta.blastout")
     if len(homologs)  == 0:
         sys.exit("No homologs found for %s, exiting ..." % (gene))
     
