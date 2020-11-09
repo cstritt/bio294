@@ -8,7 +8,7 @@ Created on Fri Nov  8 10:17:51 2019
 @author: cristobal
 """
 
-
+import os
 import sys
 import strumenti
 
@@ -20,7 +20,8 @@ from Bio import Phylo
 
 
 def fastagrep(gene, path_to_fasta, outname):
-    """ Fetch fasta entry/ies from a multifasta file.
+    """ Fetch fasta entry/ies from a multifasta file 
+    and write it to gene.fasta.
     """
     
     switch = 0
@@ -95,6 +96,7 @@ def muscle_align(fasta_in, outname):
     aln = AlignIO.read(outname, 'fasta')
     return aln
         
+#%%
 
 
 def main():
